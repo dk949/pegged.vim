@@ -1,12 +1,28 @@
-# peg.vim
+# pegged.vim
 
-[Parsing Expression Grammar](http://en.wikipedia.org/wiki/Parsing_expression_grammar) syntax for vim.
+This is a fork of [peg.vim](https://github.com/gf3/peg.vim).
 
-![Screenshot](http://f.cl.ly/items/3b2I2L3s2b1M0o1g0900/Screen%20shot%202011-02-09%20at%201.14.06%20AM.png)
+Syntax highlighting for [pegged](https://github.com/PhilippeSigaud/Pegged)
+grammars.
 
-Try it out with these [sample grammars](https://github.com/azatoth/PanPG/tree/master/grammars).
+Files with `.pegd` extension are treated as `pegged` files.
 
-## Install
+## Features
 
-Install it with [pathogen](http://www.vim.org/scripts/script.php?script_id=2332).
+Highlighting of all standard parts of PEG (since pegged is a superset of PEG).
 
+Highlighting of most of pegged extensions.
+
+## Known missing features
+
+Highlighting of semantic actions. Would be great to have this, but I don't see a
+way to do it if d code in side of the action has a closing curly (does pegged
+even allow that?).
+
+Parameterised Rules. No issue here, just didn't get to it yet.
+
+
+## Known bugs
+
+Things will break when parsing quotes and brackets (as in your grammar accepts
+quotes and brackets). Good news is, it will only break for 1 line (probably).
