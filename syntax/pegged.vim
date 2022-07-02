@@ -1,7 +1,7 @@
 " Vim syntax file
-" Language: Parser Expression Grammars (pegged)
-" Maintainer: Gianni Chiappetta
-" Latest Revision: 2011-02-08
+" Language: Parser Expression Grammars with pegged extensions
+" Maintainer: dk949
+" Latest Revision: 2022-07-02
 
 if exists("b:current_syntax")
   finish
